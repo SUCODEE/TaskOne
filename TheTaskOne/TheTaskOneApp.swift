@@ -5,6 +5,7 @@
 //  Created by  yourexz on 2024-06-20.
 //
 
+import Foundation
 import SwiftUI
 
 @main

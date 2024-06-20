@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5697317A2C244CAD00724781 /* TheTaskOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569731792C244CAD00724781 /* TheTaskOneApp.swift */; };
 		5697317C2C244CAD00724781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697317B2C244CAD00724781 /* ContentView.swift */; };
 		5697317E2C244CAF00724781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5697317D2C244CAF00724781 /* Assets.xcassets */; };
 		569731822C244CAF00724781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 569731812C244CAF00724781 /* Preview Assets.xcassets */; };
+		5697318E2C244DC700724781 /* TheTaskOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697318D2C244DC700724781 /* TheTaskOneApp.swift */; };
+		569731992C2450BA00724781 /* TaskOneLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 569731982C2450BA00724781 /* TaskOneLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		569731762C244CAD00724781 /* TheTaskOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheTaskOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		569731792C244CAD00724781 /* TheTaskOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTaskOneApp.swift; sourceTree = "<group>"; };
 		5697317B2C244CAD00724781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5697317D2C244CAF00724781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5697317F2C244CAF00724781 /* TheTaskOne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheTaskOne.entitlements; sourceTree = "<group>"; };
 		569731812C244CAF00724781 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5697318A2C244D6400724781 /* TaskOneLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TaskOneLibrary; path = ../TaskOneLibrary; sourceTree = "<group>"; };
+		5697318D2C244DC700724781 /* TheTaskOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTaskOneApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569731992C2450BA00724781 /* TaskOneLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +39,10 @@
 		5697316D2C244CAD00724781 = {
 			isa = PBXGroup;
 			children = (
+				5697318A2C244D6400724781 /* TaskOneLibrary */,
 				569731782C244CAD00724781 /* TheTaskOne */,
 				569731772C244CAD00724781 /* Products */,
+				569731972C2450BA00724781 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +57,7 @@
 		569731782C244CAD00724781 /* TheTaskOne */ = {
 			isa = PBXGroup;
 			children = (
-				569731792C244CAD00724781 /* TheTaskOneApp.swift */,
+				5697318D2C244DC700724781 /* TheTaskOneApp.swift */,
 				5697317B2C244CAD00724781 /* ContentView.swift */,
 				5697317D2C244CAF00724781 /* Assets.xcassets */,
 				5697317F2C244CAF00724781 /* TheTaskOne.entitlements */,
@@ -67,6 +72,13 @@
 				569731812C244CAF00724781 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		569731972C2450BA00724781 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +97,9 @@
 			dependencies = (
 			);
 			name = TheTaskOne;
+			packageProductDependencies = (
+				569731982C2450BA00724781 /* TaskOneLibrary */,
+			);
 			productName = TheTaskOne;
 			productReference = 569731762C244CAD00724781 /* TheTaskOne.app */;
 			productType = "com.apple.product-type.application";
@@ -140,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5697317C2C244CAD00724781 /* ContentView.swift in Sources */,
-				5697317A2C244CAD00724781 /* TheTaskOneApp.swift in Sources */,
+				5697318E2C244DC700724781 /* TheTaskOneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +374,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		569731982C2450BA00724781 /* TaskOneLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TaskOneLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5697316E2C244CAD00724781 /* Project object */;
 }
